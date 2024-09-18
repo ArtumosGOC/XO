@@ -19,7 +19,10 @@ Jogo::Jogo() : jogador1('0'), jogador2('0'), jogadorAtual(1) {
     isWindows = true;
     setlocale(LC_ALL, "pt_br");
 #else
-		isWindows = false;
+	if (!setlocale(LC_ALL, "Portuguese"))
+        isWindows = false;
+	else
+		isWindows = true;
 #endif
 
 	mostrarMensagem("Bem-vindo ao Jogo da Velha!\n");
