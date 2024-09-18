@@ -14,9 +14,6 @@
 
 ## Estrutura do Código
 
-
-## Estrutura do Código
-
 - `Tabuleiro.h`: Declaração da classe `Tabuleiro`.
 - `Tabuleiro.cpp`: Implementação da classe `Tabuleiro`.
 - `Jogador.h`: Declaração da classe `Jogador`.
