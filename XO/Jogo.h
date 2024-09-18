@@ -4,7 +4,7 @@
 #include "Tabuleiro.h"
 #include "Jogador.h"
 
-#include <iostream>.
+#include <iostream>
 #include <locale.h>
 
 class Jogo {
