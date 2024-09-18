@@ -57,6 +57,7 @@ void Jogo::iniciar() {
     } while (jogar_novamente == 's' || jogar_novamente == 'S');
     #else
 	setlocale(LC_ALL, NULL);
+    char jogar_novamente;
     do {
         tabuleiro.inicializar();
         tabuleiro.desenhar();
