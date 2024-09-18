@@ -13,10 +13,12 @@ private:
     Jogador jogador1;
     Jogador jogador2;
     int jogadorAtual;
+    bool isWindows;
 public:
     Jogo();
     void iniciar();
     void trocarJogador();
+    void mostrarMensagem(const std::string& mensagem);
 };
 
 #endif // JOGO_H
