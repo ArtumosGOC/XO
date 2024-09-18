@@ -4,7 +4,11 @@
 Jogo::Jogo() : jogador1('X'), jogador2('O'), jogadorAtual(1) {}
 
 void Jogo::iniciar() {
+    #ifdef _WIN32
 	setlocale(LC_ALL, "Portuguese");
+    #else
+	setlocale(LC_ALL, "pt_BR.UTF-8");
+    #endif
     char jogar_novamente;
     do {
         tabuleiro.inicializar();
