@@ -19,7 +19,7 @@ Jogo::Jogo() : jogador1('0'), jogador2('0'), jogadorAtual(1) {
     isWindows = true;
     setlocale(LC_ALL, "pt_br");
 #else
-    if (!setlocale(LC_ALL, "pt_BR"))
+    if (!setlocale(LC_ALL, "pt_BR.ACP"))
         isWindows = false;
 	else
 		isWindows = true;
