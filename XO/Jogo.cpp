@@ -15,10 +15,15 @@ namespace {
 
 Jogo::Jogo() : jogador1('0'), jogador2('0'), jogadorAtual(1) {
 
-    if (!setlocale(LC_ALL, "pt_BR"))
+#ifdef _WIN32
+    isWindows = true;
+    setlocale(LC_ALL, "pt_br");
+#else
+    if (!setlocale(LC_ALL, "pt_BR.UTF-8"))
         isWindows = false;
 	else
 		isWindows = true;
+#endif
 
 	mostrarMensagem("Bem-vindo ao Jogo da Velha!\n");
     mostrarMensagem("Qual jogador você deseja ser? (X, O): ");
