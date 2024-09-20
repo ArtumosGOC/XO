@@ -35,7 +35,7 @@
    ```
 3. Compile os arquivos:
    ```sh
-   g++ -o jogo_da_velha Tabuleiro.cpp Jogador.cpp Jogo.cpp main.cpp
+   g++ -o jogo_da_velha Tabuleiro.cpp Jogador.cpp Jogo.cpp XO.cpp
    ```
 4. Por fim Execute!
    ```sh
