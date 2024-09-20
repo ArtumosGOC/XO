@@ -37,6 +37,10 @@
    ```sh
    g++ -o jogo_da_velha Tabuleiro.cpp Jogador.cpp Jogo.cpp XO.cpp
    ```
+   ou
+    ```sh
+   g++ *.cpp
+   ```
 4. Por fim Execute!
    ```sh
    ./jogo_da_velha
